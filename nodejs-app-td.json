@@ -7,10 +7,10 @@
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "nodejsapp-5000-tcp",
                     "containerPort": 5000,
                     "hostPort": 5000,
                     "protocol": "tcp",
+                    "name": "nodejsapp-5000-tcp",
                     "appProtocol": "http"
                 }
             ],
@@ -75,17 +75,16 @@
         "MANAGED_INSTANCES",
         "FARGATE"
     ],
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
     "requiresCompatibilities": [
         "FARGATE"
     ],
     "cpu": "256",
     "memory": "512",
-    "runtimePlatform": {
-        "cpuArchitecture": "X86_64",
-        "operatingSystemFamily": "LINUX"
-    },
-    "registeredAt": "2026-03-14T07:52:16.092Z",
+    "registeredAt": "2026-03-14T07:52:16.092000+00:00",
     "registeredBy": "arn:aws:iam::127424156127:root",
-    "enableFaultInjection": false,
-    "tags": []
+    "enableFaultInjection": false
 }
